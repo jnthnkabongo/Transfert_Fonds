@@ -29,12 +29,6 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
 
-    <!-- =======================================================
-  * Template Name: NiceAdmin - v2.2.2
-  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -44,7 +38,7 @@
         <div class="d-flex align-items-center justify-content-between">
             <a href="index.html" class="logo d-flex align-items-center">
                 <img src="assets/img/logo.png" alt="">
-                <span class="d-none d-lg-block">NiceAdmin</span>
+                <span class="d-none d-lg-block">TRM</span>
             </a>
             <i class="bi bi-list toggle-sidebar-btn"></i>
         </div><!-- End Logo -->
@@ -267,19 +261,156 @@
 
     </header><!-- End Header -->
 
+    <!-- ======= Sidebar ======= -->
+<aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+        <li class="nav-item">
+            <a class="nav-link " href="index.html">
+                <i class="bi bi-grid"></i>
+                <span>Dashboard</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-layout-text-window-reverse"></i><span>Pays</span><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="{{route('ajout_pays')}}">
+                        <i class="bi bi-circle"></i><span>Ajouter un pays</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{route('liste_pays')}}">
+                        <i class="bi bi-circle"></i><span>Liste des pays</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#trans" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-bar-chart"></i><span>Transactions</span><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="trans" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="{{route('depot')}}">
+                        <i class="bi bi-circle"></i><span>Dépot</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{route('retrait')}}">
+                        <i class="bi bi-circle"></i><span>Retrait</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#agents" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-people"></i><span>Agents</span><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="agents" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="{{route('ajout_agents')}}">
+                        <i class="bi bi-circle"></i><span>Ajouter un agent</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{route('liste_agents')}}">
+                        <i class="bi bi-circle"></i><span>Liste des agents</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{route('affectation')}}">
+                        <i class="bi bi-circle"></i><span>Affectation</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#agence" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-house"></i><span>Agences</span><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="agence" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="{{route('ajout_agences')}}">
+                        <i class="bi bi-circle"></i><span>Ajouter une agence</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{route('liste_agences')}}">
+                        <i class="bi bi-circle"></i><span>Liste agences</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#devise" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-currency-dollar"></i><span>Dévise</span><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="devise" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="{{route('ajout_devise')}}">
+                        <i class="bi bi-circle"></i><span>Ajouter une devise</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{route('liste_devise')}}">
+                        <i class="bi bi-circle"></i><span>Liste devise</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#pourcentage" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-percent"></i><span>Pourcentage</span><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="pourcentage" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="{{route('ajout_pourcent')}}">
+                        <i class="bi bi-circle"></i><span>Ajouter un pourcentage</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{route('liste_pourcent')}}">
+                        <i class="bi bi-circle"></i><span>liste pourcentages</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="{{route('historiques')}}">
+                <i class="bi bi-card-list"></i>
+                <span>Historiques</span>
+            </a>
+        </li><!-- End Contact Page Nav -->
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="pages-register.html">
+                <i class="bi bi-person-circle"></i>
+                <span>Déconnexion</span>
+            </a>
+        </li>
+    </ul>
+
+</aside><!-- End Sidebar-->
+
     @yield('content')
 
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
         <div class="copyright">
-            &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
+            &copy; Copyright <strong><span>bestech Consult</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
-            <!-- All the links in the footer should remain intact. -->
-            <!-- You can delete the links only if you purchased the pro version. -->
-            <!-- Licensing information: https://bootstrapmade.com/license/ -->
-            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            Designed by <a href="">BestechConsult</a>
         </div>
     </footer><!-- End Footer -->
 
