@@ -1,10 +1,9 @@
-@extends('header.header2')
+@extends('header.headfoot')
 @section('content')
 
 <div class="premiere">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row ">
-            <div class="col-xs-1 col-md-1 "></div>
             <div class="col-xs-10 col-md-10 ">
                 <div class="card py-5">
                     <div class="card-body">

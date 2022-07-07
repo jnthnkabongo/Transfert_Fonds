@@ -1,2 +1,2 @@
-@extends('header.header2')
+@extends('header.headfoot')
 @section('content')

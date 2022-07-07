@@ -1,21 +1,21 @@
-@extends('header.header2')
+@extends('header.headfoot')
 @section('content')
 
+<br><br><br>
 
-<div class="premiere">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row ">
-            <div class="col-xs-1 col-md-1 "></div>
-            <div class="col-xs-10 col-md-10 ">
+            <div class="col-xs-3 col-md-3"></div>
+            <div class="col-xs-9 col-md-9 ">
                 <div class="card py-5">
                     <div class="card-body">
                         <div class="row ">
-                            <div class="col-xs-3 col-md-3  justify-content-between"></div>
-                            <div class="col-xs-6 col-md-6  justify-content-center">
-                                <h2>Liste pourcentage</h2>
+                            <div class="col-xs-4 col-md-4  justify-content-between"></div>
+                            <div class="col-xs-4 col-md-4  justify-content-center">
+                                <h2>List des retraits</h2>
                             </div>
-                            <div class="col-xs-3 col-md-3 justify-content-end">
-                                <button type="button" class="btn btn-primary btn-md" data-bs-toggle="modal" data-bs-target="#basicModal">Ajouter une affectation</button>
+                            <div class="col-xs-4 col-md-4 justify-content-end">
+
                             </div>
                         </div>
                         <!-- Tableau avec bordures -->
@@ -71,10 +71,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xs-2 col-md-2 col-sm-2"></div>
         </div>
     </div>
-</div>
 
 <!--Basique  Modal-->
 
@@ -86,11 +84,11 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            Non omnis incidunt qui sed occaecati magni asperiores est mollitia. Soluta at et reprehenderit. Placeat autem numquam et fuga numquam. Tempora in facere consequatur sit dolor ipsum. Consequatur nemo amet incidunt est facilis. Dolorem neque recusandae quo sit molestias sint dignissimos.
+            
         </div>
         <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+            <button type="button" class="btn btn-primary">Ajouter</button>
         </div>
         </div>
     </div>

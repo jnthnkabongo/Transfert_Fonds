@@ -1,22 +1,19 @@
-@extends('header.header2')
+@extends('header.headfoot')
 @section('content')
 
-
-<div class="premiere">
-    <div class="container-fluid">
+    <br><br><br><br><br>
+    <div class="container">
         <div class="row ">
-            <div class="col-xs-1 col-md-1 "></div>
-            <div class="col-xs-10 col-md-10 ">
+            <div class="col-xs-3 col-md-3 "></div>
+            <div class="col-xs-9 col-md-9 ">
                 <div class="card py-5">
                     <div class="card-body">
                         <div class="row ">
-                            <div class="col-xs-3 col-md-3  justify-content-between"></div>
-                            <div class="col-xs-6 col-md-6  justify-content-center">
-                                <h2>Liste des affectations</h2>
+                            <div class="col-xs-4 col-md-4  justify-content-between"></div>
+                            <div class="col-xs-4 col-md-4  justify-content-center">
+                                <h2>Liste des dépôts</h2>
                             </div>
-                            <div class="col-xs-3 col-md-3 justify-content-end">
-                                <button type="button" class="btn btn-primary btn-md" data-bs-toggle="modal" data-bs-target="#basicModal">Ajouter une affectation</button>
-                            </div>
+                            <div class="col-xs-4 col-md-4 justify-content-end"></div>
                         </div>
                         <!-- Tableau avec bordures -->
                         <table class="table datatable table-hover">
@@ -71,10 +68,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xs-2 col-md-2 col-sm-2"></div>
         </div>
     </div>
-</div>
 
 <!--Basique  Modal-->
 

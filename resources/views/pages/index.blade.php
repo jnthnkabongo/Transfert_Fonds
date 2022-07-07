@@ -1,15 +1,13 @@
 @extends('header.headfoot')
 @section('content')
 
-
-
 <main id="main" class="main">
 
     <div class="pagetitle">
         <h1>Dashboard</h1>
         <nav>
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
                 <li class="breadcrumb-item active">Dashboard</li>
             </ol>
         </nav>
@@ -23,7 +21,7 @@
                 <div class="row">
 
                     <!-- Sales Card -->
-                    <div class="col-xxl-4 col-md-4">
+                    <div class="col-xxl-3 col-md-3">
                         <div class="card info-card sales-card">
                             <div class="card-body">
                                 <h5 class="card-title">Pays </h5>
@@ -33,7 +31,7 @@
                                         <i class="bi bi-globe"></i>
                                     </div>
                                     <div class="ps-3">
-                                        <h6>4</h6>
+                                        <h6>00</h6>
                                     </div>
                                 </div>
                             </div>
@@ -42,16 +40,16 @@
                     </div><!-- End Sales Card -->
 
                     <!-- Revenue Card -->
-                    <div class="col-xxl-4 col-md-4">
+                    <div class="col-xxl-3 col-md-3">
                         <div class="card info-card revenue-card">
                             <div class="card-body">
-                                <h5 class="card-title">Transactions </h5>
+                                <h5 class="card-title"> Envois </h5>
                                 <div class="d-flex align-items-center">
                                     <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                                        <i class="bi bi-currency-dollar"></i>
+                                        <i class="bi bi-"></i>
                                     </div>
                                     <div class="ps-3">
-                                        <h6>$3,264</h6>
+                                        <h6>00</h6>
                                     </div>
                                 </div>
                             </div>
@@ -59,21 +57,40 @@
                     </div><!-- End Revenue Card -->
 
                     <!-- Customers Card -->
-                    <div class="col-xxl-4 col-md-4">
-                        <div class="card info-card customers-card">
+                    <div class="col-xxl-3 col-md-3">
+                        <div class="card info-card revenue-card">
                             <div class="card-body">
-                                <h5 class="card-title">Clients </h5>
+                                <h5 class="card-title">Retraits </h5>
                                 <div class="d-flex align-items-center">
                                     <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                                        <i class="bi bi-people"></i>
+                                        <i class="bi bi-money"></i>
                                     </div>
                                     <div class="ps-3">
-                                        <h6>1244</h6>
+                                        <h6>00</h6>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Customers Card -->
+                    <div class="col-xxl-3 col-md-3">
+                        <div class="card info-card customers-card">
+                            <div class="card-body">
+                                <h5 class="card-title">Agents </h5>
+                                <div class="d-flex align-items-center">
+                                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-people"></i>
+                                    </div>
+                                    <div class="ps-3">
+                                        <h6>00</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                     <!--<div class="col-xxl-4 col-md-4">
                         <div class="card info-card customers-card">
                             <div class="filter">
@@ -238,8 +255,8 @@
                 </div>
             </div>
         </div>
-    </div>
-</section>
+        </div>
+    </section>
 </main>
 @endsection
 
@@ -260,9 +277,9 @@
 
 
 
-                    <!-- End Recent Sales -->
+<!-- End Recent Sales -->
 
-                    <!-- Top Selling --
+<!-- Top Selling --
                     <div class="col-12">
                         <div class="card top-selling overflow-auto">
 
@@ -336,11 +353,11 @@
                         </div>
                     </div><!-- End Top Selling -->
 
-                </div>
-            </div><!-- End Left side columns -->
+</div>
+</div><!-- End Left side columns -->
 
-            <!-- Right side columns -->
-            <!--<div class="col-lg-4">
+<!-- Right side columns -->
+<!--<div class="col-lg-4">
 
 
                 <div class="card">
@@ -617,5 +634,3 @@
                             </div>
 
                         </div><!-- End sidebar recent posts-->
-
-
