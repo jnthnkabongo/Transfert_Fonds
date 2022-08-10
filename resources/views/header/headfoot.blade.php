@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="utf-8">
@@ -38,7 +38,7 @@
         <div class="d-flex align-items-center justify-content-between">
             <a href="{{route('home')}}" class="logo d-flex align-items-center">
                 <img src="assets/img/logo.png" alt="">
-                <span class="d-none d-lg-block">FTM</span>
+                <span class="d-none d-lg-block">FMT</span>
             </a>
             <i class="bi bi-list toggle-sidebar-btn"></i>
         </div><!-- End Logo -->
@@ -56,35 +56,25 @@
 
                     <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
                         <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
-                        <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
+                        <span class="d-none d-md-block dropdown-toggle ps-2"></span>
                     </a><!-- End Profile Iamge Icon -->
 
                     <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
                         <li class="dropdown-header">
-                            <h6>Kevin Anderson</h6>
+                           <h6>Robert</h6>
                         </li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
 
                         <li>
-                            <a class="dropdown-item d-flex align-items-center" href="#">
+                            <a class="dropdown-item d-flex align-items-center" href="{{route('profil')}}">
                                 <i class="bi bi-person"></i>
                                 <span>Mon Profile</span>
                             </a>
                         </li>
                         <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-
-                        <li>
-                            <a class="dropdown-item d-flex align-items-center" href="#">
+                            <a class="dropdown-item d-flex align-items-center" href="{{route('log_out')}}">
                                 <i class="bi bi-box-arrow-right"></i>
                                 <span>Déconnexion</span>
                             </a>
@@ -120,9 +110,13 @@
                     </a>
                 </li>-->
                     <li>
+                        <a href="{{route('ajoutPays')}}">
+                            <i class="bi bi-circle"></i><span>Ajouter un pays</span>
+                        </a>
                         <a href="{{route('liste_pays')}}">
                             <i class="bi bi-circle"></i><span>Liste des pays</span>
                         </a>
+
                     </li>
                 </ul>
             </li>
@@ -150,11 +144,11 @@
                     <i class="bi bi-people"></i><span>Agents</span><i class="bi bi-chevron-down ms-auto"></i>
                 </a>
                 <ul id="agents" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-                    <!--<li>
-                    <a href="{{route('ajout_agents')}}">
-                        <i class="bi bi-circle"></i><span>Ajouter un agent</span>
-                    </a>
-                </li>-->
+                    <li>
+                        <a href="{{route('ajout_agents')}}">
+                            <i class="bi bi-circle"></i><span>Ajouter un agent</span>
+                        </a>
+                    </li>
                     <li>
                         <a href="{{route('liste_agents')}}">
                             <i class="bi bi-circle"></i><span>Liste des agents</span>
@@ -173,11 +167,11 @@
                     <i class="bi bi-house"></i><span>Agences</span><i class="bi bi-chevron-down ms-auto"></i>
                 </a>
                 <ul id="agence" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-                    <!--<li>
+                    <li>
                     <a href="{{route('ajout_agences')}}">
                         <i class="bi bi-circle"></i><span>Ajouter une agence</span>
                     </a>
-                </li>-->
+                </li>
                     <li>
                         <a href="{{route('liste_agences')}}">
                             <i class="bi bi-circle"></i><span>Liste agences</span>
@@ -191,14 +185,14 @@
                     <i class="bi bi-currency-dollar"></i><span>Dévise</span><i class="bi bi-chevron-down ms-auto"></i>
                 </a>
                 <ul id="devise" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-                    <!--<li>
-                    <a href="{{route('ajout_devise')}}">
-                        <i class="bi bi-circle"></i><span>Ajouter une devise</span>
-                    </a>
-                </li>-->
+                    <li>
+                        <a href="{{route('affiche_formulaire')}}">
+                            <i class="bi bi-circle"></i><span>Ajouter une devise</span>
+                        </a>
+                    </li>
                     <li>
                         <a href="{{route('liste_devise')}}">
-                            <i class="bi bi-circle"></i><span>Liste devise</span>
+                            <i class="bi bi-circle"></i><span>Liste des devises</span>
                         </a>
                     </li>
                 </ul>
@@ -209,14 +203,14 @@
                     <i class="bi bi-percent"></i><span>Pourcentage</span><i class="bi bi-chevron-down ms-auto"></i>
                 </a>
                 <ul id="pourcentage" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-                    <!--<li>
-                    <a href="{{route('ajout_pourcent')}}">
-                        <i class="bi bi-circle"></i><span>Ajouter un pourcentage</span>
-                    </a>
-                </li>-->
+                    <li>
+                        <a href="{{route('ajout_pourcent')}}">
+                            <i class="bi bi-circle"></i><span>Ajouter un pourcentage</span>
+                        </a>
+                    </li>
                     <li>
                         <a href="{{route('liste_pourcent')}}">
-                            <i class="bi bi-circle"></i><span>liste pourcentages</span>
+                            <i class="bi bi-circle"></i><span>Liste pourcentages</span>
                         </a>
                     </li>
                 </ul>
@@ -239,7 +233,7 @@
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
-    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="public/assets/vendor/apexcharts/apexcharts.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/chart.js/chart.min.js"></script>
     <script src="assets/vendor/echarts/echarts.min.js"></script>
